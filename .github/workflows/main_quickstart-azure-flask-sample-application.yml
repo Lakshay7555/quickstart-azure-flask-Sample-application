@@ -67,12 +67,12 @@ jobs:
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_002CC7592AD343899C96EB5F104B52EC }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_AF9B89751FE942419CDD3B0FA1047983 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4621A82B911E4B29847FC2D6A31BDE20 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_93eb3d04-a0e4-4e1a-a19f-9f163f788d49 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'quickstart-azure-flask-sample-application'
+          app-name: 'sample-flask1'
           slot-name: 'Production'
           
